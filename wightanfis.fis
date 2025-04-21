@@ -1,0 +1,85 @@
+[System]
+Name='wightanfis'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=14
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='code'
+Range=[0 1]
+NumMFs=14
+MF1='in1cluster1':'gaussmf',[0.14142135623731 0.5]
+MF2='in1cluster2':'gaussmf',[0.14142135623731 0.5]
+MF3='in1cluster3':'gaussmf',[0.14142135623731 0]
+MF4='in1cluster4':'gaussmf',[0.14142135623731 1]
+MF5='in1cluster5':'gaussmf',[0.14142135623731 1]
+MF6='in1cluster6':'gaussmf',[0.14142135623731 0]
+MF7='in1cluster7':'gaussmf',[0.14142135623731 0.7]
+MF8='in1cluster8':'gaussmf',[0.14142135623731 0.3]
+MF9='in1cluster9':'gaussmf',[0.14142135623731 0.7]
+MF10='in1cluster10':'gaussmf',[0.14142135623731 0.3]
+MF11='in1cluster11':'gaussmf',[0.14142135623731 0]
+MF12='in1cluster12':'gaussmf',[0.14142135623731 1]
+MF13='in1cluster13':'gaussmf',[0.14142135623731 0.7]
+MF14='in1cluster14':'gaussmf',[0.14142135623731 0.3]
+
+[Input2]
+Name='numin'
+Range=[0 1]
+NumMFs=14
+MF1='in2cluster1':'gaussmf',[0.14142135623731 0.3]
+MF2='in2cluster2':'gaussmf',[0.14142135623731 0.8]
+MF3='in2cluster3':'gaussmf',[0.14142135623731 0.3]
+MF4='in2cluster4':'gaussmf',[0.14142135623731 0.3]
+MF5='in2cluster5':'gaussmf',[0.14142135623731 0.8]
+MF6='in2cluster6':'gaussmf',[0.14142135623731 0.8]
+MF7='in2cluster7':'gaussmf',[0.14142135623731 0.6]
+MF8='in2cluster8':'gaussmf',[0.14142135623731 0.6]
+MF9='in2cluster9':'gaussmf',[0.14142135623731 0.1]
+MF10='in2cluster10':'gaussmf',[0.14142135623731 0.1]
+MF11='in2cluster11':'gaussmf',[0.14142135623731 0]
+MF12='in2cluster12':'gaussmf',[0.14142135623731 0]
+MF13='in2cluster13':'gaussmf',[0.14142135623731 1]
+MF14='in2cluster14':'gaussmf',[0.14142135623731 1]
+
+[Output1]
+Name='out'
+Range=[0 1]
+NumMFs=14
+MF1='out1cluster1':'linear',[0 0 2.08906942525821]
+MF2='out1cluster2':'linear',[0 0 -0.815047095050977]
+MF3='out1cluster3':'linear',[0 0 -0.00922922792202126]
+MF4='out1cluster4':'linear',[0 0 0.11994066017782]
+MF5='out1cluster5':'linear',[0 0 1.26036376326456]
+MF6='out1cluster6':'linear',[0 0 -0.180957234355592]
+MF7='out1cluster7':'linear',[0 0 4.53017380546274]
+MF8='out1cluster8':'linear',[0 0 -1.22715683243872]
+MF9='out1cluster9':'linear',[0 0 0.401731702703465]
+MF10='out1cluster10':'linear',[0 0 2.15676362944763]
+MF11='out1cluster11':'linear',[0 0 -0.177379959433369]
+MF12='out1cluster12':'linear',[0 0 10.9397814280698]
+MF13='out1cluster13':'linear',[0 0 0.157827074469]
+MF14='out1cluster14':'linear',[0 0 0.036839072611975]
+
+[Rules]
+1 1, 1 (1) : 1
+2 2, 2 (1) : 1
+3 3, 3 (1) : 1
+4 4, 4 (1) : 1
+5 5, 5 (1) : 1
+6 6, 6 (1) : 1
+7 7, 7 (1) : 1
+8 8, 8 (1) : 1
+9 9, 9 (1) : 1
+10 10, 10 (1) : 1
+11 11, 11 (1) : 1
+12 12, 12 (1) : 1
+13 13, 13 (1) : 1
+14 14, 14 (1) : 1
